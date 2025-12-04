@@ -1,0 +1,102 @@
+body {
+    background:rgba(250, 178, 183, 0.625);
+}
+h1{text-align: center;}
+
+.yellow{
+    
+    height: 2cm;
+    background-color: rgba(246, 246, 143, 0.759);
+    text-align:center;
+    transition:background-color 1s ease;
+}
+.red{
+    
+    height: 2cm;
+    background-color: rgb(245, 197, 138);
+    text-align: center;
+    transition:background-color 1s ease;
+}
+#a{display: flex;
+   
+   width: 300px;
+   height:60px;
+   margin-top: 60px ;
+   margin-inline: 10px;
+    justify-content: center;
+    border-radius:200px;
+    background-image:linear-gradient(to right, rgba(154, 184, 250, 0.9), rgba(53, 205, 240, 0.786)) !important;
+
+}
+button {
+    font-family:正楷;
+    font-weight:500;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin-left: 10px;    
+    background-image:linear-gradient(to top, rgba(154, 184, 250, 0.9), rgba(53, 205, 240, 0.786)) !important;
+    border-radius: 10%;
+    border-color: rgba(96, 255, 247, 0.507);
+}
+.all{
+    font-size: 23px;
+    font-family: 楷体;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    font-weight:200;
+    flex-wrap: wrap;
+    word-break: break-all;  
+
+
+}
+th{background-color: rgba(142, 35, 35, 0.81);}
+td,th{ padding: 8px;
+
+    max-width: 800px;
+    line-height: 1.2;
+    
+}
+table {
+    width: auto;
+    min-width: 600px; 
+    table-layout: auto; 
+    border: 1px solid rgb(43, 11, 11)!important;
+    border-width: 2px!important;
+    border-collapse:collapse; 
+}
+
+
+
+
+.书单 tr:hover {
+    background-color:rgba(44, 216, 239, 0.468) ;
+    transition: background-color 0.6s ease,opacity  0.7s ease, transform 0.7s ease;
+}
+
+
+
+
+
+
+ /*rgba(145, 202, 41, 0.538);
+  rgb(245, 197, 138);
+ rgba(246, 246, 143, 0.759)
+  rgba(171, 239, 44, 0.786)好看的绿色
+  rgba(53, 205, 240, 0.786)好看的蓝色
+
+ */
+#被删除的句子{
+    transform: translateY(-75px); 
+    opacity: 0;
+    transition:all 0.75s ease;   
+}
+#要添加的句子初始位置{
+    opacity: 0;
+    transform: translateY(-55px); 
+}
+#要添加的句子结束位置{
+    opacity: 1;
+    transform: translateY(0px); 
+    transition:all 0.5s ease; 
+}

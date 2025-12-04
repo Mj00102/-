@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的读书分享</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="all"><h1 style="color:rgb(127, 35, 35);">我的阅读分享</h1>
+    
+    <span style="padding:10px;"><img src="2picture.jpg" alt="图片描述" width="100px"></span><span><p>计科五班</p><p>赵敬轩202514600518</p></span>
+    <button onclick="添加句子()" id="a">添加句子</button><button onclick="查找句子()" id="a">按照出处查找句子</button>
+</div>
+ 
+<!--             document.querySelectorAll(".书单 tr")[当前行.rowIndex-1].scrollIntoView({behavior: "smooth"});                      -->
+    <div class="all">
+    <table class="书单" >
+        <tr>
+            <th>句子</th>
+            <th>出处</th>
+            <th>操作</th>
+        </tr>
+        <!-- 用来显示自带文字，同时用来给表格上颜色的
+        没事了，加了个改颜色函数 
+        自定义句子在js文件里头
+        现在自动添加按钮也在这里头了-->
+    <script>
+        for (let n in 自定义书单) {添加句子(n);}
+        
+    </script> 
+    </table>
+    </div>
+                        
+
+
+   
+    
+
+</body>
+</html>
